@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Categories - Dark Auction</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+            height: 100%;
+            object-fit: cover;
+        }
+        .category-info {
+            padding: 20px;
+        }
+        .category-info h3 {
+            margin: 0 0 10px 0;
+            color: #333;
+        }
+        .category-info p {
+            margin: 0 0 15px 0;
+            color: #666;
+        }
+        .category-link {
+            display: inline-block;
+            background: #007bff;
+            color: white;
+            padding: 8px 16px;
+            border-radius: 4px;
+            text-decoration: none;
+            transition: background 0.3s;
+        }
+        .category-link:hover {
+            background: #0056b3;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 1em;
+            text-align: center;
+            clear: both;
+        }
+        .footer-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .footer-section {
+            margin-bottom: 20px;
+        }
+        .footer-section h3 {
+            margin: 0 0 10px 0;
+        }
+        .footer-bottom {
+            background-color: #444;
+            padding: 1em;
+            text-align: center;
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">DarkAuction</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="auctions.html">Auctions</a></li>
+            <li><a href="categories.html" class="active">Categories</a></li>
+            <li><a href="list-item.html">List Item</a></li>
+            <li><a href="profile.html">Profile</a></li>
+        </ul>
+        <div class="mobile-menu">
+            <i class="fas fa-bars"></i>
+        </div>
+    </nav>
+
+    <main>
+        <section class="categories">
+            <div class="container">
+                <h1>Browse Categories</h1>
+                
+                <div class="categories-grid">
+                    <div class="category-card">
+                        <div class="category-image">
+                            <img src="https://via.placeholder.com/300x200?text=Vehicles" alt="Vehicles">
+                        </div>
+                        <div class="category-info">
+                            <h3>Vehicles</h3>
+                            <p>Classic cars, motorcycles, and more</p>
+                            <a href="vehicles.html" class="category-link">Browse Vehicles</a>
+                        </div>
+                    </div>
+
+                    <div class="category-card">
+                        <div class="category-image">
+                            <img src="https://via.placeholder.com/300x200?text=Jewelry" alt="Jewelry">
+                        </div>
+                        <div class="category-info">
+                            <h3>Jewelry</h3>
+                            <p>Antique and modern jewelry pieces</p>
+                            <a href="jewelry.html" class="category-link">Browse Jewelry</a>
+                        </div>
+                    </div>
+
+                    <div class="category-card">
+                        <div class="category-image">
+                            <img src="https://via.placeholder.com/300x200?text=Cameras" alt="Cameras">
+                        </div>
+                        <div class="category-info">
+                            <h3>Cameras</h3>
+                            <p>Vintage and modern photography equipment</p>
+                            <a href="cameras.html" class="category-link">Browse Cameras</a>
+                        </div>
+                    </div>
+
+                    <div class="category-card">
+                        <div class="category-image">
+                            <img src="https://via.placeholder.com/300x200?text=Collectibles" alt="Collectibles">
+                        </div>
+                        <div class="category-info">
+                            <h3>Collectibles</h3>
+                            <p>Rare items and memorabilia</p>
+                            <a href="collectibles.html" class="category-link">Browse Collectibles</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>About Us</h3>
+                <p>Your premier destination for premium auctions</p>
+            </div>
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <p>Email: support@darkauction.com</p>
+                <p>Phone: (555) 123-4567</p>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 DarkAuction. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List Item - Dark Auction</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">DarkAuction</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="auctions.html">Auctions</a></li>
+            <li><a href="categories.html">Categories</a></li>
+            <li><a href="list-item.html">List Item</a></li>
+            <li><a href="profile.html">Profile</a></li>
+        </ul>
+        <div class="mobile-menu">
+            <i class="fas fa-bars"></i>
+        </div>
+    </nav>
+
+    <main class="list-item">
+        <div class="container">
+            <h1>List Your Item for Auction</h1>
+            
+            <form class="list-form">
+                <div class="form-section">
+                    <h2>Item Information</h2>
+                    
+                    <div class="form-group">
+                        <label for="title">Item Title</label>
+                        <input type="text" id="title" name="title" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="description">Description</label>
+                        <textarea id="description" name="description" rows="4" required></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="category">Category</label>
+                        <select id="category" name="category" required>
+                            <option value="">Select Category</option>
+                            <option value="vehicles">Vehicles</option>
+                            <option value="jewelry">Jewelry</option>
+                            <option value="cameras">Cameras</option>
+                            <option value="art">Art</option>
+                            <option value="electronics">Electronics</option>
+                            <option value="collectibles">Collectibles</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="starting-bid">Starting Bid</label>
+                        <input type="number" id="starting-bid" name="starting-bid" min="0" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="auction-duration">Auction Duration</label>
+                        <select id="auction-duration" name="auction-duration" required>
+                            <option value="">Select Duration</option>
+                            <option value="1">1 Day</option>
+                            <option value="3">3 Days</option>
+                            <option value="7">7 Days</option>
+                            <option value="14">14 Days</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-section">
+                    <h2>Item Images</h2>
+                    <div class="image-upload">
+                        <div class="image-preview">
+                            <img src="" alt="Preview" id="preview-image">
+                        </div>
+                        <div class="upload-buttons">
+                            <label for="main-image" class="upload-label">
+                                <i class="fas fa-upload"></i> Upload Main Image
+                            </label>
+                            <input type="file" id="main-image" name="main-image" accept="image/*" required>
+                        </div>
+                    </div>
+
+                    <div class="thumbnail-upload">
+                        <h3>Additional Images (Optional)</h3>
+                        <div class="thumbnail-previews">
+                            <div class="thumbnail-preview">
+                                <img src="" alt="Thumbnail Preview">
+                                <label for="thumbnail1" class="upload-label">
+                                    <i class="fas fa-upload"></i> Upload Thumbnail
+                                </label>
+                                <input type="file" id="thumbnail1" name="thumbnail1" accept="image/*">
+                            </div>
+                            <div class="thumbnail-preview">
+                                <img src="" alt="Thumbnail Preview">
+                                <label for="thumbnail2" class="upload-label">
+                                    <i class="fas fa-upload"></i> Upload Thumbnail
+                                </label>
+                                <input type="file" id="thumbnail2" name="thumbnail2" accept="image/*">
+                            </div>
+                            <div class="thumbnail-preview">
+                                <img src="" alt="Thumbnail Preview">
+                                <label for="thumbnail3" class="upload-label">
+                                    <i class="fas fa-upload"></i> Upload Thumbnail
+                                </label>
+                                <input type="file" id="thumbnail3" name="thumbnail3" accept="image/*">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-section">
+                    <h2>Item Specifications</h2>
+                    <div class="specifications">
+                        <div class="spec-group">
+                            <label for="year">Year</label>
+                            <input type="number" id="year" name="year">
+                        </div>
+                        <div class="spec-group">
+                            <label for="condition">Condition</label>
+                            <select id="condition" name="condition">
+                                <option value="">Select Condition</option>
+                                <option value="new">New</option>
+                                <option value="like-new">Like New</option>
+                                <option value="good">Good</option>
+                                <option value="fair">Fair</option>
+                            </select>
+                        </div>
+                        <div class="spec-group">
+                            <label for="location">Location</label>
+                            <input type="text" id="location" name="location">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-buttons">
+                    <button type="submit" class="submit-button">List Item</button>
+                    <button type="reset" class="reset-button">Reset</button>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>About Us</h3>
+                <p>Your premier destination for premium auctions</p>
+            </div>
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <p>Email: support@darkauction.com</p>
+                <p>Phone: (555) 123-4567</p>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 DarkAuction. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
